@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sfbm.mylibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.read_phone_state" />
+
+    <application>
+        <activity
+            android:name=".view.activity.PayActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+
+
+        <!-- 支付吧开始 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- 支付宝结束 -->
+
+        <activity
+            android:name="com.sfbm.mylibrary.view.activity.PaymentSuccessActivity"/>
+
+        <activity
+            android:name="com.sfbm.mylibrary.view.activity.OrderTimeoutActivity"/>
+
+    </application>
+
+</manifest>

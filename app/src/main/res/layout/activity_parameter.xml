@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sfbm.store.view.activity.ParameterActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="标题"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#e0000000"
+            android:textSize="14sp" />
+
+        <com.sfbm.store.widget.XEditText
+            android:id="@+id/et_parameter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="#0000"
+            android:ems="10"
+            android:hint="请输入标题"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            ></com.sfbm.store.widget.XEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_merchants_id"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="商户ID"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#e0000000"
+            android:textSize="14sp" />
+
+        <com.sfbm.store.widget.XEditText
+            android:id="@+id/et_parameter2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="#0000"
+            android:ems="10"
+            android:hint="请输入商户ID"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            ></com.sfbm.store.widget.XEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_app_id"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="appID"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#e0000000"
+            android:textSize="14sp" />
+
+        <com.sfbm.store.widget.XEditText
+            android:id="@+id/et_parameter3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="#0000"
+            android:ems="10"
+            android:hint="请输入appID"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            ></com.sfbm.store.widget.XEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_merchants_order"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="商户订单号"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#e0000000"
+            android:textSize="14sp" />
+
+        <com.sfbm.store.widget.XEditText
+            android:id="@+id/et_parameter4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="#0000"
+            android:ems="10"
+            android:hint="请输入商户订单号"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            ></com.sfbm.store.widget.XEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_amount"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="金额"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#e0000000"
+            android:textSize="14sp" />
+
+        <com.sfbm.store.widget.XEditText
+            android:id="@+id/et_parameter5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="#0000"
+            android:ems="10"
+            android:hint="请输入金额"
+            android:maxLength="12"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            ></com.sfbm.store.widget.XEditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_intent"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="下一步"
+        android:textColor="#ff0000"
+        />
+
+
+
+</LinearLayout>
